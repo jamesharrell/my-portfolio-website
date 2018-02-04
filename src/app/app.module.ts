@@ -4,6 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
+import { portfolio_constants } from './constants';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [portfolio_constants],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
