@@ -4,17 +4,17 @@
         <h3 class="masthead-brand">{{title}}</h3>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="{{github_url}}">Projects</a>
           <a class="nav-link" href="{{github_url}}">Github</a>
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="{{resume_url}}">Resume</a>
         </nav>
       </div>
     </header>
     <main role="main" class="inner cover">
-      <h1 class="cover-heading">This website is under construction.</h1>
-      <p class="lead">Website will be home to my portfolio including live demos of my projects</p>
+      <h1 class="cover-heading">{{home_header}}</h1>
+      <p class="lead">{{home_body}}</p>
       <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        <a href="{{resume_url}}" class="btn btn-lg btn-secondary">Learn more</a>
       </p>
     </main>
 
