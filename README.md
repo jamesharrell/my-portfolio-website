@@ -3,7 +3,7 @@
 The purpose of this project is to provide an area to host live demos of all my other projects. In addition to this, relevant links to source code will also be supplied. This Angular application is able to pull a list of my open source projects from Github and display their README.md
 
 ## Live Demo
-**https://www.jamesharrell.com/#/about**
+**https://www.jamesharrell.me/#/about**
 
 ## Getting Started
 
