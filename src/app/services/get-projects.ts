@@ -8,11 +8,11 @@ import { GITHUB_API } from '../constants';
 
 export class GetProjectsService {
     constructor(private http: Http,
-        @Inject(GITHUB_API) public github_api: string) {
+        @Inject(GITHUB_API) public github_api: string) { // Inject the Github API url from constants.ts
 
     }
 
     getProjects() {
-        return this.http.get(this.github_api).map((response: Response) => response.json());
+        return this.http.get(this.github_api).map((response: Response) => response.json()); // Get JSON from API
     }
 }

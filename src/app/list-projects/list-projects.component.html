@@ -1,5 +1,10 @@
 <ul>
   <li *ngFor="let project of projects">
-    {{project.name}}
+    <h1 class="cover-heading">
+      {{project.name}}
+    </h1>
+    <p class="lead">
+        <a href={{project.html_url}}>Project Github Page</a>
+    </p>
   </li>
-</ul>>
+</ul>

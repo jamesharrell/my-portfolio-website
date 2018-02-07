@@ -1,32 +1,23 @@
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">{{title}}</h3>
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="{{github_url}}">Projects</a>
-          <a class="nav-link" href="{{github_url}}">Github</a>
-          <a class="nav-link" href="{{resume_url}}">Resume</a>
-        </nav>
-      </div>
-    </header>
-    <main role="main" class="inner cover">
-      <h1 class="cover-heading">{{home_header}}</h1>
-      <p class="lead">{{home_body}}</p>
-      <p class="lead">
-        <a href="{{resume_url}}" class="btn btn-lg btn-secondary">Learn more</a>
-      </p>
-
-      <p>
-        Projects:
-        <app-list-projects></app-list-projects>
-      </p>
-    </main>
-
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>Contact me
-          <a href="mailto:{{email}}">{{email}}</a>
-      </div>
-    </footer>
-  </div>
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">{{title}}</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+        <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
+        <a class="nav-link" href="{{github_url}}">Github</a>
+        <a class="nav-link" href="{{resume_url}}">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main role="main" class="inner cover">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Contact me
+        <a href="mailto:{{email}}">{{email}}</a>
+    </div>
+  </footer>
+</div>
