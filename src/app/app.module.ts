@@ -5,17 +5,22 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { portfolio_constants } from './constants';
+import { ListProjectsComponent } from './list-projects/list-projects.component';
+import { GetProjectsService } from './services/get-projects';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListProjectsComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     NgbModule.forRoot()
   ],
-  providers: [portfolio_constants],
+  providers: [portfolio_constants, GetProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
