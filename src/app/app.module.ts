@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -8,7 +8,9 @@ import { portfolio_constants } from './constants';
 import { ListProjectsComponent } from './list-projects/list-projects.component';
 import { GetProjectsService } from './services/get-projects';
 import { HttpModule } from '@angular/http';
+
 import { AboutComponent } from './about/about.component';
+import { MarkdownModule } from 'ngx-md';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full'},
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(appRoutes, {useHash: true})
+    RouterModule.forRoot(appRoutes, {useHash: true}),
+    MarkdownModule.forRoot()
   ],
   providers: [portfolio_constants, GetProjectsService],
   bootstrap: [AppComponent]

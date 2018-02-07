@@ -1,27 +1,38 @@
-# MyPortfolioWebsite
+# Angular Portfolio Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
+The purpose of this project is to provide an area to host live demos of all my other projects. In addition to this, relevant links to source code will also be supplied. This Angular application is able to pull a list of my open source projects from Github and display their README.md
 
-## Development server
+## Live Demo
+**https://www.jamesharrell.com/#/about**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installing
 
-## Build
+A step by step series of examples that tell you have to get a development env running
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Say what the step will be
 
-## Running unit tests
+```
+git clone https://github.com/jamesharrell71/my-portfolio-website.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+then
 
-## Running end-to-end tests
+```
+npm install
+```
+Finally, review constants.ts to make any specific changes to any of the constants used throughout the program.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Running the tests
 
-## Further help
+```
+npm start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
