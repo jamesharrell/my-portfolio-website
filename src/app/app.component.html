@@ -1,23 +1,28 @@
-<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">{{title}}</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-        <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
-        <a class="nav-link" href="{{github_url}}">Github</a>
-        <a class="nav-link" href="{{resume_url}}">Resume</a>
-      </nav>
-    </div>
-  </header>
-  <main role="main" class="inner cover">
-    <router-outlet></router-outlet>
-  </main>
-  
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Contact me
-        <a href="mailto:{{email}}">{{email}}</a>
-    </div>
-  </footer>
-</div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-sm fixed-top text-uppercase navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" routerLink="/about">{{title}}</a>
+
+    <nav class="navbar-nav justify-content-center">
+
+      <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+
+      <a class="nav-link" routerLink="/projects" routerLinkActive="active">Portfolio</a>
+
+      <a class="nav-link" href="{{github_url}}">Github</a>
+
+      <a class="nav-link" href="{{resume_url}}">Resume</a>
+
+    </nav>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="footer fixed-bottom">
+  <div class="container">
+    <span class="text-muted">Contact me
+      <a href="mailto:{{email}}">{{email}}</a>
+    </span>
+  </div>
+</footer>

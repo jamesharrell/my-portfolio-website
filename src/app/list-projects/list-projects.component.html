@@ -1,11 +1,10 @@
-<li *ngFor="let project of projects">
-  <a href={{project.html_url}}>Project Github Page</a>
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 350rem;">
-      <div class="card-body">
-        <h5 class="card-title">Dark card title</h5>
-        <p class="card-text">s</p>
-        <div Markdown path="https://raw.githubusercontent.com/jamesharrell71/{{project.name}}/master/README.md"></div>
-      </div>
+<div class="mx-auto" style="padding: 5rem" *ngFor="let project of projects">
+  <div class="card mx-auto" style="width: 75%">
+    <div class="card-header">
+      <a href={{project.html_url}}>Project Github Page</a>
     </div>
-</li>
+    <div class="card-block">
+      <div Markdown path="https://raw.githubusercontent.com/jamesharrell71/{{project.name}}/master/README.md"></div>
+    </div>
+  </div>
+</div>
